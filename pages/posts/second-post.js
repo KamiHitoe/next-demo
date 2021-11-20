@@ -2,23 +2,26 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Layout from '../../components/layout';
 
-export default function FirstPost() {
+export default function SecondPost() {
   return (
     <Layout>
       <Head>
-        <title>First Post</title>
+        <title>Second Post</title>
       </Head>
 
-      <h1>First post</h1>
-      <h2>
+      <section>
+        <h1>
+          Second post
+        </h1>
         <Link href="/">
           <a>back to home page</a>
         </Link>
         <br />
-        <Link href="/posts/second-post">
-          <a>jump to second post</a>
+        <Link href="/posts/first-post">
+          <a>jump to first post</a>
         </Link>
-      </h2>
+      </section>
     </Layout>
-  );
+  )
 }
+
